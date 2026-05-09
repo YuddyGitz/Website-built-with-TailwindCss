@@ -1,7 +1,12 @@
 @import "tailwindcss";
 
 @theme{
+    --color-pri-col: #1e40ae;
+    --color-gold: #f49e0b;
+    --color-white-shade: #f6f6f6;
+    --color-deep-blue: #131a2a;
     --animate-turn: rotate 3s ease-in-out 2s infinite;
+    --breakpoint-3xl: 104rem;
 }
 
 @keyframes rotate{
@@ -11,4 +16,12 @@
     100%{
         transform: rotate(360deg);
     }
+}
+
+.navlink {
+    @apply text-pri-col
+}
+
+.container {
+    @apply w-9/10 mx-auto 2xl:w-3/5
 }

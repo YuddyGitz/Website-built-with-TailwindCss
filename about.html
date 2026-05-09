@@ -8,33 +8,88 @@
     <title>About</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div>
-                Skyline Consulting
+    <header class="h-18 w-full border-b border-black/10 items-center sticky top-0 z-50 bg-white-shade shadow-xl">
+
+        <nav class="h-full flex items-center justify-between px-4 relative">
+            <div class="font-bold">
+                <h1>Skyline Consulting</h1>
             </div>
 
-            <ul class="hidden">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul class="hidden lg:flex items-center gap-8">
+                <li><a href="#" class="text-black/85 hover:text-pri-col font-medium navlink ">Home</a></li>
+                <li><a href="#" class="text-black/85 hover:text-pri-col font-medium">About</a></li>
+                <li><a href="#" class="text-black/85 hover:text-pri-col font-medium">Service</a></li>
+                <li><a href="#" class="text-black/85 hover:text-pri-col font-medium">Contact</a></li>
             </ul>
 
-            <!-- Online-->
-            <div>
+            <!-- Mobile-->
+            <div class="lg:hidden">
                 <button>
                     <i class="fa-solid fa-bars-staggered"></i>
                 </button>
+            
+                <ul class="absolute top-full left-0 bg-white-shade border-t border-black/10 w-3/5 max-w-60 h-[calc(100vh-4.5rem)] hidden flex-col gap-5 justify-center items-center">
+
+                    <li><a href="#" class="text-black/85 hover:text-pri-col font-medium navlink ">Home</a></li>
+                    <li><a href="#" class="text-black/85 hover:text-pri-col font-medium">About</a></li>
+                    <li><a href="#" class="text-black/85 hover:text-pri-col font-medium">Service</a></li>
+                    <li><a href="#" class="text-black/85 hover:text-pri-col font-medium">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="w-full h-[calc(100vh-4.5rem)] bg-[url('/abstract-design-background.jpg')] bg-center bg-no-repeat bg-cover relative">
+
+            <div class="h-full relative z-2 flex flex-col gap-6 2xl:gap-10 justify-center items-center ">
+
+                <h2 class="text-white-shade font-bold text-4xl md:text-6xl lg:text-6xl 2xl:text-7xl text-center capitalize w-9/10 max-w-130 2xl:max-w-150">Building better Business Solutions</h2>
+
+                <p class="text-white-shade text-center w-9/10 maw-w-100 lg:max-w-130 2xl:max-w-150 text-sm lg:text-xl 2xl:text-2xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum officiis sapiente laudantium quibusdam perferendis et? </p>
+
+                <div class="flex flex-col gap-2 lg:flex-row">
+
+                    <a href="#" class="bg-gold text-white-shade py-3 px-16 rounded-2xl">Get Started</a>
+                    <a href="#" class="border border-white-shade py-3 px-16 rounded-2xl text-white-shade">Learn More</a>
+
+                </div>
             </div>
 
-            <ul class="">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+            <!--Overlay-->
+            <div class="absolute bg-pri-col/60 left-0 top-0 w-full h-full">
+
+            </div>
+        </section>
+
+        <section class="my-4 flex flex-col gap-4">
+            <h2>Our Services</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, et!</p>
+
+            <div>
+                <!--First Card-->
+                <div>
+                    <span><i class="fa-solid fa-chart-area"></i></span>
+
+                    <h3>Business Strategy</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non fugiat fugit ratione sit eos?</p>
+                </div>
+
+                <!--Second Card-->
+                <div>
+                    <span><i class="fa-brands fa-searchengin"></i></span>
+
+                    <h3>Market Research</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non fugiat fugit ratione sit eos?</p>
+                </div>
+
+                <!--Third Card-->
+                <div>
+                    <span><i class="fa-solid fa-calculator"></i></span>
+
+                    <h3>Financial Consulting</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non fugiat fugit ratione sit eos?</p>
+                </div>
+            </div>
+        </section>
     </header>
 </body>
 </html>
