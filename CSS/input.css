@@ -5,6 +5,7 @@
     --color-gold: #f49e0b;
     --color-white-shade: #f6f6f6;
     --color-deep-blue: #131a2a;
+    --color-footer-blue: #111828;
     --animate-turn: rotate 3s ease-in-out 2s infinite;
     --breakpoint-3xl: 104rem;
 }
@@ -24,4 +25,12 @@
 
 .container {
     @apply w-9/10 mx-auto 2xl:w-3/5
+}
+
+.input{
+    @apply border-2 border-black/5 rounded outline-0 focus:border-pri-col px-3 h-10
+}
+
+.textarea{
+    @apply border-2 rounded border-black/5 outline-0 focus:border-pri-col px-3
 }
