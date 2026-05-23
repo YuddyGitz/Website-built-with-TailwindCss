@@ -1,91 +1,194 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./CSS/output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./CSS/output.css" rel="stylesheet">
+    <title>About</title>
 </head>
 <body>
+    <header class="h-18 w-full border-b border-black/10 items-center sticky top-0 z-50 bg-white-shade shadow-xl">
 
-  <div class="bg-blue-400 top-0 py-5 px-5 h-5 justify-between text-white fixed z-3 w-full flex  border-b-4 border-black/3 shadow-2xl items-center">
-    <div class="">Search Bar</div>
+        <nav class="h-full flex items-center justify-between px-4 relative">
+            <div class="font-bold">
+                <h1>Skyline Consulting</h1>
+            </div>
 
-    <div class="flex gap-2 ml-16">
-      <div>Notification</div>
-      <a href="#" class="">Log-out</a>
-    </div>
+            <ul class="hidden lg:flex items-center gap-8">
+                <li><a href="#" class="text-black/85 hover:text-pri-col font-medium navlink ">Home</a></li>
+                <li><a href="#" class="text-black/85 hover:text-pri-col font-medium">About</a></li>
+                <li><a href="#" class="text-black/85 hover:text-pri-col font-medium">Service</a></li>
+                <li><a href="#" class="text-black/85 hover:text-pri-col font-medium">Contact</a></li>
+            </ul>
+
+            <!-- Mobile-->
+            <div class="lg:hidden">
+                <button>
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            
+                <ul class="absolute top-full left-0 bg-white-shade border-t border-black/10 w-3/5 max-w-60 h-[calc(100vh-4.5rem)] hidden flex-col gap-5 justify-center items-center">
+
+                    <li><a href="#" class="text-black/85 hover:text-pri-col font-medium navlink ">Home</a></li>
+                    <li><a href="#" class="text-black/85 hover:text-pri-col font-medium">About</a></li>
+                    <li><a href="#" class="text-black/85 hover:text-pri-col font-medium">Service</a></li>
+                    <li><a href="#" class="text-black/85 hover:text-pri-col font-medium">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+        <section class="w-full h-[calc(100vh-4.5rem)] bg-[url('/abstract-design-background.jpg')] bg-center bg-no-repeat bg-cover relative">
+
+            <div class="h-full relative z-2 flex flex-col gap-6 2xl:gap-10 justify-center items-center ">
+
+                <h2 class="text-white-shade font-bold text-4xl md:text-6xl lg:text-6xl 2xl:text-7xl text-center capitalize w-9/10 max-w-130 2xl:max-w-150">Building better Business Solutions</h2>
+
+                <p class="text-white-shade text-center w-9/10 maw-w-100 lg:max-w-130 2xl:max-w-150 text-sm md:text-xl lg:text-xl 2xl:text-2xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum officiis sapiente laudantium quibusdam perferendis et? </p>
+
+                <div class="flex flex-col gap-2 lg:flex-row">
+
+                    <a href="#" class="bg-gold text-white-shade py-3 px-16 rounded-2xl">Get Started</a>
+                    <a href="#" class="border border-white-shade py-3 px-16 rounded-2xl text-white-shade">Learn More</a>
+
+                </div>
+            </div>
+
+            <!--Overlay-->
+            <div class="absolute bg-pri-col/60 left-0 top-0 w-full h-full">
+
+            </div>
+        </section>
+
+        <!--OUR SERVICES-->
+        <section class="py-16 w-full bg-blue-50/70">
+            <div class="w-9/10 max-w-7xl mx-auto flex flex-col gap-6"> 
+
+                <div class="flex flex-col gap-2 items-center">
+
+                    <h2 class="text-3xl lg:text-4xl font-bold">Our Services</h2>
+
+                    <p class="text-center text-black/60 text-sm lg:text-2xl 2xl:text-4xl w-9/10 max-w-130 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, et!</p>
+                </div>              
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!--First Card-->
+                    <div class="flex flex-col gap-3 border border-black/2 shadow-xl py-8 px-4 rounded-2xl bg-white-shade">
+                        <span class="flex flex-col w-10 h-10 bg-blue-600/10 justify-center items-center rounded-lg">
+                            <i class="fa-solid fa-chart-area text-pri-col"></i>
+                        </span>
+
+                        <h3 class="font-bold">Business Strategy</h3>
+
+                        <p class="text-black/70 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non fugiat fugit ratione sit eos?</p>
+                    </div>
+
+                    <!--Second Card-->
+                    <div class="flex flex-col gap-3 border border-black/2 shadow-xl py-8 px-4 rounded-2xl bg-white-shade">
+                        <span class="flex flex-col w-10 h-10 bg-amber-400/10 justify-center items-center rounded-lg">
+                            <i class="fa-brands fa-searchengin text-gold"></i>
+                        </span>
+
+                        <h3 class="font-bold">Market Research</h3>
+                        <p class="text-black/70 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non fugiat fugit ratione sit eos?</p>
+                    </div>
+
+                    <!--Third Card-->
+                    <div class="flex flex-col gap-3 border border-black/2 shadow-xl py-8 px-4 rounded-2xl bg-white-shade">
+
+                        <span class="flex flex-col w-10 h-10 bg-green-600/10 justify-center items-center rounded-lg">
+                            <i class="fa-solid fa-calculator text-green-600"></i>
+                        </span>
+
+                        <h3 class="font-bold">Financial Consulting</h3>
+                        <p class="text-black/70 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non fugiat fugit ratione sit eos?</p>
+                    </div>
+                </div>
+           
+            </div> 
+        </section>
+
+        <section class="py-16 w-full bg-white">
+            <div class="w-9/10 max-w-7xl mx-auto flex flex-col gap-8 md:flex-row items-center">
+                <article class="flex flex-col gap-3 w-full md:w-1/2 lg:w-7/10">
+                    <h2 class="font-bold text-lg md:text-xl lg:text-2xl 2xl:text-4xl">About Skyline Consulting</h2>
+                    <p class="text-black/60 lg:text-lg 2xl:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae vero perspiciatis placeat corrupti laboriosam, culpa, nisi quasi pariatur at ut provident officiis inventore sed cum hic id debitis. Accusamus, in!</p>
+
+                    <p class="text-black/60 lg:text-lg 2xl:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo nostrum error, quis incidunt voluptatem expedita repellat dolore repudiandae sequi, exercitationem laborum totam doloremque, soluta mollitia consectetur! Dignissimos, quibusdam consequuntur.</p>
+
+                    <div class="flex gap-2 sm:gap-4">
+                        <div class="flex flex-col items-center text-center gap-1 lg:gap-2">
+                            <p class="font-bold text-pri-col">500+</p>
+                            <p class="font-bold text-xs text-black/60 ">Client Served</p>
+                        </div>
+
+                        <div class="flex flex-col items-center text-center gap-1 lg:gap-2">
+                            <p class="font-bold text-pri-col">10+</p>
+                            <p class="font-bold text-xs text-black/60">Years Of Experience</p>
+                        </div>
+
+                        <div class="flex flex-col items-center text-center gap-1 lg:gap-2">
+                            <p class="font-bold text-pri-col">95%</p>
+                            <p class="font-bold text-xs text-black/60">Success Rate</p>
+                        </div>
+                    </div>
+
+                </article>
+
+                <div class="w-full md:w-1/2 flex items-center  ">
+                    <img src="./small-kitchen-space-with-modern-design.jpg" alt="KitchenImg" title="KitchenImg" class="w-full lg:w-full lg:h-full max-h-70 rounded-2xl">
+                </div> 
+            </div>
+
+        </section>
+
+        <section class="py-17 w-full bg-deep-blue">
+
+            <div class="flex flex-col gap-6">
+
+                <div class="flex flex-col gap-2 items-center"> 
+                    <h3 class="text-white-shade font-bold text-3xl lg:text-4xl
+                    ">Get In Touch</h3>
+                    <p class="text-white-shade text-center w-9/10 maw-w-100 lg:max-w-130 2xl:max-w-150 text-sm md:text-xl lg:text-xl 2xl:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, sequi adipisicing elit. Hic, sequi.</p>
+                </div>
+
+                <form class="bg-white-shade rounded-2xl w-9/10 max-w-3xl shadow-xl shadow-white-shade/10 mx-auto py-8 px-5">
+
+                    <div class="flex flex-col gap-2 w-full">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+
+                            <article class="flex flex-col gap-1 ">
+                                <label class="font-semibold text-sm" for="name">Full Name</label>
+                                <input class="input"  type="text" id="name" placeholder="Yourfull name">
+                            </article>
+
+                            <article class="flex flex-col gap-1">
+                                <label class="font-semibold text-sm" for="email">Email</label>
+                                <input class="input" type="text" id="email" placeholder="your@email.com">
+                            </article>
+                        </div>
+
+                        <div class="flex flex-col gap-1">
+                            <label class="font-semibold text-sm" for="message">Message</label>
+                            <textarea class="textarea" id="message" placeholder="Tell us about your project or questions....." rows="5"></textarea>
+                        </div>
+
+                        <button class="bg-blue-800 text-white-shade rounded-2xl py-3 text-sm font-semibold cursor-pointer active:translate-y-2 flex justify-center items-center gap-2">Send Message <i class="fa-regular fa-paper-plane"></i></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer class="bg-footer-blue py-5 border-t border-white-shade/5">
+            <div class="w-9/10 max-w-7xl mx-auto flex flex-col gap-3 md:flex-row justify-between">
+                <p class="text-white-shade font-semibold text-lg lg:text-2xl">
+                    Skyline Consulting
+                </p>
+                <p class="text-white-shade/50 text-sm font-semibold">
+                    &copy 2025 Skyline Consulting Ltd. All rights reserved.
+                </p>
+            </div>
+        </footer>
     
-  </div>
-
-  <nav class="h-screen bg-yellow-500 w-30 fixed top-10 left-0 right-0 flex flex-col overflow-auto gap-4">
-    <h2>Categories</h2>
-    <aside class="h-full  ">
-      <ul class="border-l border-black ml-2 pl-3 gap-3">
-      <li><a href="">Home</a></li>
-      <li><a href="">About</a></li>
-      <li><a href="">Products</a></li>
-      <li><a href="">Contact-Us</a></li>
-      <li>Home</li>
-      <li>About</li>
-      <li>Products</li>
-      <li>Contact-Us</li>
-      <li>Home</li>
-      <li>About</li>
-      <li>Products</li>
-      <li>Contact-Us</li>
-      <li>Home</li>
-      <li>About</li>
-      <li>Products</li>
-      <li>Contact-Us</li>
-      <li>Home</li>
-      <li>About</li>
-      <li>Products</li>
-      <li>Contact-Us</li>
-      </ul>
-    </aside>
-  </nav>
-
-  <h1 class="text-5xl text-red-700 ml-30 mt-15">
-    Denzix to the World with Tailwind!
-  </h1>
-
-  <div class="top-15 ml-30">
-    <h2 class="text-blue-500 font-bold text-[1rem] leading-1.5 text-center capitalize ">Heading text</h2>
-
-    <p class="leading-4 text-red-600 underline decoration-blue-600 decoration-dashed decoration-[0.3rem] rounded-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis, doloribus, quam ipsam incidunt repudiandae iusto corporis eligendi qui perferendis architecto in est illo. Consequatur soluta minus, ex debitis </p>
-
-    <button class="bg-yellow-400 rounded-xl px-3 py-3 my-5 mx-5 font-bold border-2 border-black/40">Click Here</button>
-
-  </div>
-  
-  <div class="w-16 h-16 bg-blue-400 animate-turn ml-50 "></div>
-
-  <div class="my-16 ml-30 bg-blue-800 flex gap-4 py-8 px-8">
-    
-    <div class="text-black bg-yellow-500 w-33/100 h-40 flex justify-center items-center text-2xl">1</div>
-    <div class="text-black bg-yellow-500 w-33/100 h-40 flex justify-center items-center text-2xl">2</div>
-    <div class="text-black bg-yellow-500 w-33/100 h-40 flex justify-center items-center text-2xl">3</div>
-
-  </div>
-
-  <div class="my-16 ml-30 bg-blue-800 gap-4 grid grid-cols-3 py-8 px-8">
-    
-    <div class="text-black bg-pink-500 h-40 flex justify-center items-center text-2xl">1</div>
-    <div class="text-black bg-pink-500 h-40 flex justify-center items-center text-2xl">2</div>
-    <div class="text-black bg-pink-500 h-40 flex justify-center items-center text-2xl">3</div>
-    
-  </div>
-
-   <div class="my-16 ml-30 bg-blue-800 gap-4 grid grid-cols-6 py-8 px-8 border border-solid">
-    
-    <div class="text-black bg-green-500 h-40 text-2xl col-span-4 col-start-2 flex justify-center items-center">1</div>
-
-    <div class="text-black bg-green-500 h-40 text-2xl col-start-1 col-end-3 flex justify-center items-center">2</div>
-
-    <div class="text-black bg-green-500 h-40 text-2xl col-start-5 col-end-7 flex justify-center items-center">3</div>
-
-    <div class="text-black bg-green-500 h-40 text-2xl col-start-1 col-end-7 flex justify-center items-center">4</div>
-    
-  </div>
 </body>
 </html>
